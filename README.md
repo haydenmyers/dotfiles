@@ -1,12 +1,12 @@
 ## Helpful motions and commands
 
 ### General
-:wqa = write and quit all
-:wa = write all
-:qa = quit all
-:e = edit file
-:e <filename> = edit a file with a filename
-:nohlsearch/:noh = remove the highlight on the search results
+- `:wqa` = write and quit all
+- `:wa` = write all
+- `:qa` = quit all
+- `:e` = edit file
+- `:e` <filename> = edit a file with a filename
+- `:nohlsearch/:noh` = remove the highlight on the search results
 
 To change instances of text sequentially
 - search for text: `/`
