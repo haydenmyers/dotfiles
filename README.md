@@ -14,21 +14,21 @@ To change instances of text sequentially
 - perform the same action on next occurences: `.`
 
 ### Visual mode
-<C-V> = visual block mode
+- `<C-V>` = visual block mode
 
 ### Buffers
-:ls = list all open buffers
-<C-6> = switch between last used buffers
-:b <number> = go to specific buffer
+- `:ls` = list all open buffers
+- `<C-6>` = switch between last used buffers
+- `:b <number>` = go to specific buffer
 
 ### Splits
-:sp/:split = horizontal split
-:vs/:vsplit = vertical split
+- `:sp/:split` = horizontal split
+- `:vs/:vsplit` = vertical split
 
 ### Tabs
-:tabnew = open a new tab
-:tabp = previous tab
-:tabn = next tab
+- `:tabnew` = open a new tab
+- `:tabp` = previous tab
+- `:tabn` = next tab
 
 ## NeoVim
 A guide on working with lua in neovim can be found here: https://neovim.io/doc/user/lua-guide.html#lua-guide.
