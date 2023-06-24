@@ -40,6 +40,12 @@ return require('packer').startup(function(use)
   -- Commenting support (gcc / gc in other modes/motions)
   use('tpope/vim-commentary')
 
+  -- Indent autodetection with editorconfig support
+  use('tpope/vim-sleuth')
+
+  -- Allow plugins to enable repeating of commands
+  use('tpope/vim-repeat')
+
   -- LSP
   use {
 	  'VonHeikemen/lsp-zero.nvim',
