@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/haydenmyers/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-lastplace"] = {
+    loaded = true,
+    path = "/Users/haydenmyers/.local/share/nvim/site/pack/packer/start/vim-lastplace",
+    url = "https://github.com/farmergreg/vim-lastplace"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/Users/haydenmyers/.local/share/nvim/site/pack/packer/start/vim-repeat",

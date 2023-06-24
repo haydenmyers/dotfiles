@@ -46,6 +46,12 @@ return require('packer').startup(function(use)
   -- Allow plugins to enable repeating of commands
   use('tpope/vim-repeat')
 
+  -- Jump to the last location when opening a file
+  use('farmergreg/vim-lastplace')
+
+  -- Enable * searching with visually selected text
+  use('nelstrom/vim-visual-star-search')
+
   -- LSP
   use {
 	  'VonHeikemen/lsp-zero.nvim',
