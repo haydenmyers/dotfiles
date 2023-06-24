@@ -37,6 +37,9 @@ return require('packer').startup(function(use)
   -- Manage surround chars
   use('tpope/vim-surround')
 
+  -- Commenting support (gcc / gc in other modes/motions)
+  use('tpope/vim-commentary')
+
   -- LSP
   use {
 	  'VonHeikemen/lsp-zero.nvim',
