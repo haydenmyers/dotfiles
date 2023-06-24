@@ -8,16 +8,16 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Color scheme
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+  vim.cmd('colorscheme rose-pine')
+
   -- Fuzzy finder
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-
-  -- Color scheme
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
-  vim.cmd('colorscheme rose-pine')
 
   -- Syntax highlighting
   use {
@@ -33,6 +33,9 @@ return require('packer').startup(function(use)
 
   -- Git
   use('tpope/vim-fugitive')
+
+  -- Manage surround chars
+  use('tpope/vim-surround')
 
   -- LSP
   use {
