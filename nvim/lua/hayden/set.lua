@@ -21,6 +21,8 @@ vim.opt.undofile = true -- remember the undo history if you close nvim
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+vim.opt.cursorline = true
+
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 4

@@ -33,6 +33,9 @@ To change instances of text sequentially
 ## NeoVim
 A guide on working with lua in neovim can be found here: https://neovim.io/doc/user/lua-guide.html#lua-guide.
 
+## Telescope Plugin
+[ripgrep](https://github.com/nvim-telescope/telescope.nvim#suggested-dependencies) is required for `live_grep` and `grep_string` and is the first priority for `find_files`.
+
 ## Font
 The font can be found at https://nerdfonts.com.
 If you want to find the fonts that kitty knows about, run `kitty list-fonts`.

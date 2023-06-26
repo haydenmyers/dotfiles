@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
 -- Ability to move lines up and down when highlighted.
 -- Like <option>+up/down in vs code.
