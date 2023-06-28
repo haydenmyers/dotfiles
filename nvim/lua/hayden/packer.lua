@@ -59,9 +59,6 @@ return require('packer').startup(function(use)
 	-- View undo history in a tree
 	use('mbbill/undotree')
 
-	-- Git
-	use('tpope/vim-fugitive')
-
 	-- Manage surround chars
 	use('tpope/vim-surround')
 
@@ -137,6 +134,10 @@ return require('packer').startup(function(use)
 			vim.g.pasta_disabled_filetypes = { 'fugitive' }
 		end
 	})
+
+	-- Git integration
+	use('tpope/vim-fugitive')
+	use('lewis6991/gitsigns.nvim')
 
 	-- LSP
 	use {
