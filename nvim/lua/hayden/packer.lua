@@ -31,6 +31,22 @@ return require('packer').startup(function(use)
 		requires = 'kyazdani42/nvim-web-devicons'
 	})
 
+	-- A status line
+	use({
+		'nvim-lualine/lualine.nvim',
+		requires = 'kyazdani42/nvim-web-devicons'
+	})
+
+	-- Display buffers as tabs
+	use({
+		'akinsho/bufferline.nvim',
+		requires = 'kyazdani42/nvim-web-devicons',
+		after = 'vscode.nvim',
+		config = function()
+			require('bufferline').setup()
+		end
+	})
+
 	-- Syntax highlighting
 	use {
 		'nvim-treesitter/nvim-treesitter',
@@ -48,6 +64,9 @@ return require('packer').startup(function(use)
 
 	-- Manage surround chars
 	use('tpope/vim-surround')
+
+	-- Adds [b and other handy mappings
+	use('tpope/vim-unimpaired')
 
 	-- Commenting support (gcc / gc in other modes/motions)
 	use('tpope/vim-commentary')
