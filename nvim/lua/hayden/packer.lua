@@ -136,8 +136,16 @@ return require('packer').startup(function(use)
 	})
 
 	-- Git integration
-	use('tpope/vim-fugitive')
 	use('lewis6991/gitsigns.nvim')
+
+	-- Git commands
+	use({
+		'tpope/vim-fugitive',
+		requires = 'tpope/vim-rhubarb',
+	})
+
+	-- Floating terminal
+	use('voldikss/vim-floaterm')
 
 	-- LSP
 	use {

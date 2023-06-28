@@ -33,6 +33,8 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.signcolumn = 'yes:1'
+
 vim.opt.title = true
 vim.opt.mouse = 'a' -- enable mouse for all modes
 
