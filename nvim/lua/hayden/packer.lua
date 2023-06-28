@@ -50,7 +50,10 @@ return require('packer').startup(function(use)
 	-- Syntax highlighting
 	use {
 		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
+		run = ':TSUpdate',
+		requires = {
+			'JoosepAlviste/nvim-ts-context-commentstring',
+		}
 	}
 
 	-- Fast file switching
