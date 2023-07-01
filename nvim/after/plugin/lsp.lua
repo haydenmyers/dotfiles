@@ -4,13 +4,21 @@ lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 end)
 
-lsp.setup_servers({'lua_ls', 'tsserver', 'tailwindcss'})
+-- When you don't have mason.nvim installed
+-- You'll need to list the servers installed in your system
+-- lsp.setup_servers({'lua_ls', 'tsserver', 'tailwindcss'})
 
 local lspconfig = require('lspconfig')
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Configure lua language server for neovim
 lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
+
+-- Typescript
+lspconfig.tsserver.setup({
+  capabilities = capabilities,
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact", "javascript.jsx" },
+})
 
 -- Tailwind CSS
 lspconfig.tailwindcss.setup({ capabilities = capabilities })

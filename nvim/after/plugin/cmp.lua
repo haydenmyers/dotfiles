@@ -44,14 +44,27 @@ cmp.setup({
       end
     end, { "i", "s" }),
 
-    -- ... Your other mappings ...
+    -- Not working for some reason.
+    -- `Enter` key to confirm completion
+    -- ['<CR>'] = cmp.mapping.confirm({ select = false }),
+    -- ['<CR>'] = cmp.mapping(function(fallback)
+    --   if cmp.visible() then
+    --     cmp.confirm({ select = false })
+    --   else
+    --     fallback()
+    --   end
+    -- end),
+
+    -- Not working for some reason
+    -- Ctrl+Space to trigger completion menu
+    -- ['<C-Space>'] = cmp.mapping.complete(),
   },
 
   sources = {
     { name = "nvim_lsp" },
     { name = "nvim_lsp_signature_help" },
-    { name = "luasnip" },
-    { name = "buffer" },
+    { name = "luasnip", keyword_length = 2 },
+    { name = "buffer", keyword_length = 3 },
     { name = "path" },
   },
 
