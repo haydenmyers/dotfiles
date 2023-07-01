@@ -7,8 +7,24 @@ end)
 lsp.setup_servers({'lua_ls', 'tsserver', 'tailwindcss'})
 
 local lspconfig = require('lspconfig')
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 -- Configure lua language server for neovim
 lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
+
+-- Tailwind CSS
+lspconfig.tailwindcss.setup({ capabilities = capabilities })
+
+-- JSON
+lspconfig.jsonls.setup({
+  capabilities = capabilities,
+  settings = {
+    json = {
+      schemas = require('schemastore').json.schemas(),
+      validate = { enable = true },
+    },
+  },
+})
 
 lsp.setup()
 

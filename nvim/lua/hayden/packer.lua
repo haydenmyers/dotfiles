@@ -165,11 +165,16 @@ return require('packer').startup(function(use)
 			end,
 		},
 		{'williamboman/mason-lspconfig.nvim'}, -- Optional
-
+		{'b0o/schemastore.nvim'},
 		-- Autocompletion
 		{'hrsh7th/nvim-cmp'},     -- Required
-		{'hrsh7th/cmp-nvim-lsp'}, -- Required
 		{'L3MON4D3/LuaSnip'},     -- Required
+		{'hrsh7th/cmp-nvim-lsp'}, -- Required
+		{'hrsh7th/cmp-nvim-lsp-signature-help'},
+		{'saadparwaiz1/cmp_luasnip'}, -- Integrates with LuaSnip.
+		{'hrsh7th/cmp-buffer'}, -- Complete words from the buffer we are in.
+		{'hrsh7th/cmp-path'}, -- Complete file path.
+		{'onsails/lspkind-nvim'}, -- Eye candy. Adds icons.
 	}
 }
 

@@ -13,6 +13,9 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
+vim.opt.wildmode = 'longest:full,full' -- complete the longest common match, and allow tabbing the results to fully complete them.
+vim.opt.completeopt = 'menuone,longest,preview'
+
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
