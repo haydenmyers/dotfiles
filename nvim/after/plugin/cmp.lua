@@ -2,6 +2,9 @@ local cmp = require("cmp")
 local luasnip = require("luasnip")
 local lspkind = require("lspkind")
 
+-- For your snippets
+require('luasnip/loaders/from_snipmate').lazy_load()
+
 local has_words_before = function()
   unpack = unpack or table.unpack
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
@@ -44,20 +47,11 @@ cmp.setup({
       end
     end, { "i", "s" }),
 
-    -- Not working for some reason.
     -- `Enter` key to confirm completion
-    -- ['<CR>'] = cmp.mapping.confirm({ select = false }),
-    -- ['<CR>'] = cmp.mapping(function(fallback)
-    --   if cmp.visible() then
-    --     cmp.confirm({ select = false })
-    --   else
-    --     fallback()
-    --   end
-    -- end),
+    ['<CR>'] = cmp.mapping.confirm({ select = false }),
 
-    -- Not working for some reason
     -- Ctrl+Space to trigger completion menu
-    -- ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-Space>'] = cmp.mapping.complete(),
   },
 
   sources = {
