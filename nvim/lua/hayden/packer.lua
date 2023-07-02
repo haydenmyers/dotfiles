@@ -166,6 +166,8 @@ return require('packer').startup(function(use)
 		},
 		{'williamboman/mason-lspconfig.nvim'}, -- Optional
 		{'b0o/schemastore.nvim'},
+		{'jose-elias-alvarez/null-ls.nvim'},
+		{'jayp0521/mason-null-ls.nvim'},
 		-- Autocompletion
 		{'hrsh7th/nvim-cmp'},     -- Required
 		{'L3MON4D3/LuaSnip'},     -- Required

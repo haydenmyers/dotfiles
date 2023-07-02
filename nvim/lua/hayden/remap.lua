@@ -35,8 +35,8 @@ vim.keymap.set("i", ",,", "<Esc>A,")
 -- We don't want to deal with Q.
 vim.keymap.set("n", "Q", "<nop>")
 
--- Replace the word that you're on.
-vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+-- Search and replace the word that you're on.
+vim.keymap.set("n", "<leader>sr", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
 -- Navigate windows.
 vim.keymap.set("n", "<C-h>", "<C-w>h")
